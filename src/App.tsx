@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Technologies from "./components/Technologies";
 import type { TechnologiesType } from "./types/TechnologiesType";
+import Footer from "./components/Footer";
 
 const loadTechnologies = async (): Promise<TechnologiesType[]> => {
   const response = await fetch("/technologies.json");
@@ -24,7 +25,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Technologies technologiesPromise={technologiesPromise} />
-    
+       <Footer/>
     </>
   );
 };
