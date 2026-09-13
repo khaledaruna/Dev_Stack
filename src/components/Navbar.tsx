@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="border-b border-slate-200 sticky top-0 bg-white z-50">
       <div className="container mx-auto px-3 py-4 flex justify-between items-center">
-        {/* hamburger button */}
+        {/* hamburger menu button */}
 
         <button
           type="button"
@@ -20,11 +20,11 @@ const Navbar = () => {
           <img src={hamburger} className="w-5 h-5" alt="" />
         </button>
 
-        {/* Logo */}
+        {/* Logo ==== */}
         <div>
           <img src={logo} alt="Dev Stack" className="w-20 sm:w-28 lg:w-32" />
         </div>
-        {/* Nav Item */}
+        {/* Nav Menus==== */}
         <ul
           className={`${isOpen ? "flex" : "hidden"} absolute top-full left-0 w-full flex-col gap-5 bg-white p-5 shadow-md text-[#475569] lg:static lg:flex lg:w-auto lg:flex-row lg:gap-8 lg:p-0 lg:shadow-none`}
         >
