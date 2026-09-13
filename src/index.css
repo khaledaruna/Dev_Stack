@@ -1,20 +1,19 @@
 @import "tailwindcss";
-
 @plugin "daisyui" {
   themes: light --default;
 }
+
 :root {
-  --brand-gradient: linear-gradient(135deg, #ff5722, #d81b7e, #7c3aed);
+  --brand-gradient: linear-gradient(to right, #ff5722, #d91b7e, #7c3aed);
 }
 
-/* Custom Utilities */
 .brand-gradient {
   background-image: var(--brand-gradient);
 }
 
 .brand-gradient-text {
   background-image: var(--brand-gradient);
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
