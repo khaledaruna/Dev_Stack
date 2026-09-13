@@ -1,14 +1,12 @@
 import { useState } from "react";
-import logo from "../assets/logo-text.png";
-import hamburger from "../assets/hamburger.png";
-
+import { HiMenuAlt1 } from "react-icons/hi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="border-b border-slate-200 sticky top-0 bg-white z-50">
       <div className="container mx-auto px-3 py-4 flex justify-between items-center">
-        {/* hamburger menu button */}
+        {/* hamburger button */}
 
         <button
           type="button"
@@ -17,14 +15,27 @@ const Navbar = () => {
           aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <img src={hamburger} className="w-5 h-5" alt="" />
+          <HiMenuAlt1 className="w-7 h-7" />
         </button>
 
-        {/* Logo ==== */}
+        {/* Logo */}
         <div>
-          <img src={logo} alt="Dev Stack" className="w-20 sm:w-28 lg:w-32" />
+          {/* <img src={logo} alt="Dev Stack" className="w-20 sm:w-28 lg:w-32" /> */}
+          <div className="flex items-center gap-2">
+            <span
+              className="brand-gradient flex h-8 w-8
+      items-center justify-center rounded-lg
+      text-xs font-bold text-white"
+            >
+              DS
+            </span>
+
+            <span className="brand-gradient-text text-xl font-bold">
+              Dev Stack
+            </span>
+          </div>
         </div>
-        {/* Nav Menus==== */}
+        {/* Nav Item */}
         <ul
           className={`${isOpen ? "flex" : "hidden"} absolute top-full left-0 w-full flex-col gap-5 bg-white p-5 shadow-md text-[#475569] lg:static lg:flex lg:w-auto lg:flex-row lg:gap-8 lg:p-0 lg:shadow-none`}
         >
@@ -85,7 +96,7 @@ const Navbar = () => {
           </button>
 
           <button
-            className="bg-[#DB2777] px-4 py-2
+            className="brand-gradient px-4 py-2
       rounded-full text-xs sm:text-sm
       text-white cursor-pointer"
             type="button"
