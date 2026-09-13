@@ -1,23 +1,17 @@
-// const App = () => {
-//   return (
-//     <>
-    
-//       <Navbar />
-//       <Hero />
-//       <Technologies technologiesPromise={technologiesPromise} />
-//       <Footer />
-//     </>
-//   );
-// };
 
-// export default App;
+import Navbar from "./components/Navbar";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Dev Stack</h1>
-    </div>
+    <>
+    
+      <Navbar />
+      {/* <Hero />
+      <Technologies technologiesPromise={technologiesPromise} />
+      <Footer /> */}
+    </>
   );
-}
+};
 
 export default App;
+
