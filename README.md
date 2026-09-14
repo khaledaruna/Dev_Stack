@@ -4,12 +4,11 @@ Dev Stack is a responsive React application that helps users explore modern web 
 
 ## 🌐 Live Demo
 
-
-[View Live Demo](https://........vercel.app/)
+[View Live Demo]()
 
 ## Project Preview
 
-![Dev Stack Builder desktop preview](./public/dev-stack-desktop.png)
+![Dev Stack Builder desktop preview](./public/Dev_Stack.png)
 
 
 
